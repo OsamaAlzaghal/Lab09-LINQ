@@ -43,7 +43,7 @@ namespace LINQ
         {
             // Here, I tried to get a relative path, but I couldn't get one, so I used my absolute path.
             // Note: to test my solution, just uncomment the foreach to see the output for each question.
-            using (StreamReader reader = File.OpenText(@"C:\Users\acer\Advanced dotNET\Lab09-LINQ\LINQ\data.json"))
+            using (StreamReader reader = File.OpenText(@"../../../../data.json"))
 
             {   // Read data.json file.
                 JObject dataFile = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
